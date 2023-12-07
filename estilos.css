@@ -1,0 +1,100 @@
+body {
+  --bege: #E6E0D6;
+  --marrom-escuro: #816D4F;
+  --marrom-claro: #B29463;
+  font-family: 'Barlow';
+  overflow-x: hidden;
+}
+/*Menu*/
+input[type=checkbox] {
+  border: 2px solid var(--marrom-claro);
+  box-shadow: none;
+}
+input[type=checkbox]:checked,
+input[type="checkbox"]:focus {
+  background-color: var(--marrom-claro);
+  border-color: var(--marrom-claro);
+  box-shadow: none;
+  outline: none;
+}
+@media screen and (max-width: 375px){
+  .navbar-brand{
+    width:50%;
+    margin: 0%;
+  }
+  .navbar-brand img{
+    width: 80%;
+  }
+}
+/*Banners*/
+.banners{
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.banner-1{
+  background-image: url(/assets/banner-1.png);
+}
+.banner-2{
+  background-image: url(/assets/banner-2.png);
+}
+.banner-3{
+  background-image: url(/assets/banner-3.png);
+}
+.banner-content{
+  --bs-bg-opacity: .2;
+}
+/*Services*/
+.botao-padrao{
+  background-color: var(--marrom-claro);
+}
+.botao-padrao:hover{
+  background-color: var(--marrom-escuro);
+}
+#services .card{
+  border-color: var(--marrom-claro);
+}
+/*Products*/
+.card {
+  cursor: pointer;
+}
+.modal-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 375px){
+  .modal-image{
+    width:75%;
+  }
+}
+/*Formulário*/
+.input-range::-webkit-slider-thumb{
+  background-color: var(--marrom-claro);
+}
+/*Footer*/
+footer{
+  background-color: var(--marrom-claro);
+}
+.redes-sociais{
+  width: 12rem;
+}
+footer a{
+  color: #000;
+}
+footer a:hover{
+  color: var(--marrom-escuro)
+}
+/*Dark Mode*/
+[data-bs-theme="dark"]{
+  color: #fff;
+  .nav-link, .btn, .card, .offcanvas, .form-select, footer a{
+    --bs-nav-link-color: #fff;
+    --bs-body-color: #fff;
+    --bs-offcanvas-color: #fff;
+    color:#fff;
+  }
+}
