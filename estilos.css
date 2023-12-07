@@ -34,6 +34,7 @@ input[type="checkbox"]:focus {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-size: contain;
 }
 .banner-1{
   background-image: url(/assets/banner-1.png);
