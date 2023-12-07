@@ -44,17 +44,6 @@ input[type="checkbox"]:focus {
 .banner-3{
   background-image: url(/assets/banner-3.png);
 }
-@media screen and (max-width:425px){
-  .banner-1{
-    background-image: url(/assets/banner-1-mobile.jpg);
-  }
-  .banner-2{
-    background-image: url(/assets/banner-2-mobile.jpg);
-  }
-  .banner-3{
-    background-image: url(/assets/banner-3-mobile.jpg);
-  }
-}
 .banner-content{
   --bs-bg-opacity: .2;
 }
