@@ -170,35 +170,34 @@
   <div class="row">
     <div class="col-10 col-xl-8 mx-auto">
       <div class="border border-2 rounded p-3">
-        <h2 class="fw-bold p-3">Entre em contato!</h2>
+       <h2 class="fw-bold p-3">Entre em contato!</h2>
 
-        <form name="contato-serenatto" method="post" id="contact" data-netfily="true" netfily>
-          <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="floatingName" placeholder="nome">
-            <label for="floatingName">Nome Completo</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingEmail" placeholder="email">
-            <label for="floatingEmail">Email</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input type="cel" class="form-control" id="floatingPhone" placeholder="telefone">
-            <label for="floatingPhone">Telefone</label>
-          </div>
+<form name="contato-serenatto" method="POST" id="contact" data-netlify="true">
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="floatingName" placeholder="nome" name="nome">
+    <label for="floatingName">Nome Completo</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="email" class="form-control" id="floatingEmail" placeholder="email" name="email">
+    <label for="floatingEmail">Email</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="cel" class="form-control" id="floatingPhone" placeholder="telefone" name="telefone">
+    <label for="floatingPhone">Telefone</label>
+  </div>
 
-          <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="floatingSubject" placeholder="Assunto">
-            <label for="floatingSubject">Assunto</label>
-          </div>
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="floatingSubject" placeholder="Assunto" name="assunto">
+    <label for="floatingSubject">Assunto</label>
+  </div>
 
-          <div class="form-floating mb-3">
-            <textarea class="form-control" placeholder="Deixe sua mensagem aqui" id="floatingTextarea" style="height: 100px"></textarea>
-            <label for="floatingTextarea">Sua Mensagem</label>
-          </div>
+  <div class="form-floating mb-3">
+    <textarea class="form-control" placeholder="Deixe sua mensagem aqui" id="floatingTextarea" style="height: 100px" name="mensagem"></textarea>
+    <label for="floatingTextarea">Sua Mensagem</label>
+  </div>
 
-          <button type="button" class="btn botao-padrao w-100 p-3 fw-bold">Enviar Mensagem</button>
-          
-        </form>
+  <button type="submit" class="btn botao-padrao w-100 p-3 fw-bold">Enviar Mensagem</button>
+</form>
       </div>
     </div>
   </div>
