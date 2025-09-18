@@ -171,10 +171,11 @@
     <div class="col-10 col-xl-8 mx-auto">
       <div class="border border-2 rounded p-3">
         <h2 class="fw-bold p-3">Entre em contato!</h2>
-        <form action="" id="contact">
+
+        <form name="contato-serenatto" action="" id="contact" data-netfily="true">
           <div class="form-floating mb-3">
             <input type="text" class="form-control" id="floatingName" placeholder="nome">
-            <label for="floatingName">Nome</label>
+            <label for="floatingName">Nome Completo</label>
           </div>
           <div class="form-floating mb-3">
             <input type="email" class="form-control" id="floatingEmail" placeholder="email">
@@ -184,21 +185,18 @@
             <input type="cel" class="form-control" id="floatingPhone" placeholder="telefone">
             <label for="floatingPhone">Telefone</label>
           </div>
-          <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-            <option selected>Prefrência de contato</option>
-            <option value="1">Whatsapp</option>
-            <option value="2">Email</option>
-            <option value="3">Ligação</option>
-          </select>
-          <label for="nivel-satisfacao" class="form-label py-4">Nível de satisfação:</label>
-          <input type="range" class="form-range input-range" id="nivel-satisfacao">
-          <div class="form-check py-4">
-            <input class="form-check-input" type="checkbox" value="" id="check-novidades">
-            <label class="form-check-label" for="check-novidades">
-              Deseja receber novidades por email?
-            </label>
+
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingSubject" placeholder="Assunto">
+            <label for="floatingSubject">Assunto</label>
           </div>
-          <button type="button" class="btn botao-padrao w-100 p-3 fw-bold">Enviar</button>
+
+          <div class="form-floating mb-3">
+            <textarea class="form-control" placeholder="Deixe sua mensagem aqui" id="floatingTextarea" style="height: 100px"></textarea>
+            <label for="floatingTextarea">Sua Mensagem</label>
+          </div>
+
+          <button type="button" class="btn botao-padrao w-100 p-3 fw-bold">Enviar Mensagem</button>
           
         </form>
       </div>
